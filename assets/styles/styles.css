@@ -1,3 +1,8 @@
+@import "_variables.css";
+@import "_fonts.css";
+@import "_global.css";
+
+
 /*------------------------ Секция main ------------------------*/
 .main {
     background-image: url("../images/main-bg.png");
