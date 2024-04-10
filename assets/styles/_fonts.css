@@ -1,0 +1,36 @@
+@font-face {
+    src: url("../fonts/GolosText-Regular.ttf");
+    font-family: "Golos Text";
+    font-weight: 400;
+}
+
+@font-face {
+    src: url("../fonts/GolosText-Medium.ttf");
+    font-family: "Golos Text";
+    font-weight: 500;
+}
+
+@font-face {
+    src: url("../fonts/GolosText-SemiBold.ttf");
+    font-family: "Golos Text";
+    font-weight: 600;
+}
+
+@font-face {
+    src: url("../fonts/GolosText-Bold.ttf");
+    font-family: "Golos Text";
+    font-weight: 700;
+}
+
+@font-face {
+    src: url("../fonts/Merriweather-Regular.ttf");
+    font-family: "Merriweather";
+    font-weight: 400;
+}
+
+@font-face {
+    src: url("../fonts/Montserrat-Medium.ttf");
+    font-family: "Montserrat";
+    font-weight: 600;
+}
+

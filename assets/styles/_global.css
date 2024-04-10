@@ -1,0 +1,128 @@
+/*------------------------ Общие стили ------------------------*/
+html, body {
+    margin: 0;
+    padding: 0;
+
+    font-family: var(--font-family);
+    font-weight: 400;
+}
+
+.container {
+    max-width: 1222px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/*------------------------ Кнопки ------------------------*/
+.btn {
+    background: #1f1f1f;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 130%;
+    text-align: center;
+    color: #fff;
+    box-sizing: border-box;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: .3s;
+
+}
+
+.btn:hover {
+    color: #1f1f1f;
+    background: #fbce51;
+}
+
+.btn.btn-transparent {
+    border: 2px solid #1f1f1f;
+    background-color: transparent;
+    color: #1f1f1f;
+    transition: .3s;
+}
+
+.btn.btn-transparent:hover {
+    background: #1f1f1f;
+    color: #fff;
+}
+
+/*------------------------ Бегущая строка ------------------------*/
+.running-line {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    user-select: none;
+    gap: 20px;
+    padding: 18px 0;
+    background: #f54932;
+}
+
+@media screen and (max-width: 980px) {
+    .running-line {
+        padding: 10px 0;
+    }
+}
+
+.running-line:before,
+.running-line:after {
+    content: "";
+    height: 100%;
+    top: 0;
+    width: 10%;
+    position: absolute;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.running-line-items {
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-around;
+    min-width: 100%;
+}
+
+.running-line-item {
+    flex: 0 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+@media screen and (max-width: 980px) {
+    .running-line-item {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .running-line-item {
+        font-size: 16px;
+    }
+}
+
+.running-line-item svg {
+    margin: 0 12px;
+}
+
+.marquee {
+    animation: scroll 20s linear infinite;
+}
+
+.running-line:hover .marquee {
+    animation-play-state: paused;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(calc(-100% - 20px));
+    }
+}
